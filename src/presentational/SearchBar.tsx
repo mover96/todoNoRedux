@@ -7,7 +7,7 @@ export interface SearchBarProps {
 
 export const SearchBar: React.SFC<SearchBarProps> = (props) => {
     return <div>
-        <input type="text" placeholder="Search..." onChange={ e => props.updateFilter(e)}/>
+        <input type="text" placeholder="Search..." onChange={e => props.updateFilter(e)}/>
         <p>
             <input type="checkbox" onChange={e => props.toggleStocked(e)}/>
             {' '}

@@ -9,7 +9,12 @@ export interface AppProps {
     products: product[]
 }
 
-export class App extends React.Component<AppProps, any> {
+export interface AppState {
+    filter: string,
+    onlyStocked: boolean
+}
+
+export class App extends React.Component<AppProps, AppState> {
     constructor() {
         super();
         this.state = {
